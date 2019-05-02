@@ -1,0 +1,167 @@
+PixmapPath $HOME/xpms:$HOME/icons:/usr/local/share/fvwm/pixmaps:/usr/local/include/X11/pixmaps:/usr/local/share/pixmaps:/usr/local/share/icons/hicolor/32x32/apps
+IconPath   /usr/local/include/X11/bitmaps
+
+DesktopSize 3x3
+EdgeThickness 0
+EwmhBaseStruts 0 64 0 0
+XorValue 888 
+
+CleanupColorsets
+Colorset 0 fg "#a0a0a0", bg "#000000", hi "#505050", fgsh "#282828", sh "#282828"
+Colorset 1 fg "#000000", bg "#787878", hi "#505050", fgsh "#282828", sh "#282828"
+Colorset 2 fg "#787878", bg "#000000", hi "#505050", fgsh "#282828", sh "#282828"
+
+Style * HilightBorderColorset 1, BorderColorset 0, HilightColorset 0, Colorset 2
+Style * BorderWidth 7, HandleWidth 7, TitleAtLeft
+Style Fvwm* !Title, !Handles, !Borders, NeverFocus, WindowListSkip, FixedPosition, FixedSize, !Iconifiable
+Style Fvwm* Sticky
+Style *xconsole* WindowListSkip
+Style * Lenience
+MenuStyle * MenuColorset 0, ActiveColorset 1, GreyedColorset 2, TitleColorset 2
+Style * FvwmBorder
+Style * PositionPlacement UnderMouse
+Style *Wine* Title, !Borders, !Handles, TitleAtRight, HilightColorset 0 
+
+Mouse 1 I A Iconify off
+
+Mouse 3 R A Menu RootMenu
+
+Key F A 4 KbdNext 
+Key B A 4 KbdPrev 
+Key I A 4S KbdDeic
+Key C A 4S Close
+Key M A 4 Maximize 100 100
+Key M A 4S Move 0 0
+Key V A 4 Maximize 0 100
+Key G A 4 Maximize grow grow
+Key I A 4 Iconify
+Key R A 4S Restart
+Key Q A 4S Quit
+Key H A 4 KbdMove -20 +0
+Key J A 4 KbdMove +0 +20
+Key K A 4 KbdMove +0 -20
+Key L A 4 KbdMove +20 +0
+Key H A 4S KbdResize -20 +0
+Key J A 4S KbdResize +0 +20
+Key K A 4S KbdResize +0 -20
+Key L A 4S KbdResize +20 +0 
+Key Return A 4 Exec xterm
+Key 1 A 4 GotoPage 0 0
+Key 2 A 4 GotoPage 1 0
+Key 3 A 4 GotoPage 2 0
+Key 4 A 4 GotoPage 0 1
+Key 5 A 4 GotoPage 1 1 
+Key 6 A 4 GotoPage 2 1 
+Key 7 A 4 GotoPage 0 2
+Key 8 A 4 GotoPage 1 2
+Key 9 A 4 GotoPage 2 2
+Key 1 A 4S MovetoPage 0 0
+Key 2 A 4S MovetoPage 1 0
+Key 3 A 4S MovetoPage 2 0
+Key 4 A 4S MovetoPage 0 1
+Key 5 A 4S MovetoPage 1 1 
+Key 6 A 4S MovetoPage 2 1 
+Key 7 A 4S MovetoPage 0 2
+Key 8 A 4S MovetoPage 1 2
+Key 9 A 4S MovetoPage 2 2
+Key Left A 4 Exec xmms2 seek -13
+Key Down A 4 Exec xmms2 prev
+Key Up A 4 Exec xmms2 next
+Key Right A 4 Exec xmms2 seek +13
+Key Z A 4 Exec mixer vol -13
+Key X A 4 Exec mixer vol +13
+Key T A 4 Exec xmms2 toggle
+Key S A 4 Exec xmms2 stop
+Key D A 4 Exec xmms2 play
+Key P A 4 Menu RootMenu 
+
+DestroyMenu WindowMenu
+AddToMenu WindowMenu
++ "Maximize" Maximize 100 100
++ "Max/vert" Maximize 0 100 
++ "(un)Shade" WindowShade
++ "Iconify" Iconify
++ ""
++ "Close" Close
++ "" 
++ "Naught" Nop
+
+DestroyMenu RootMenu
+AddToMenu RootMenu
++ "&1.xterm" Exec exec xterm
++ "&2.youtube" Exec exec gtk-youtube-viewer
++ "&3.amule" Exec exec amule
++ "&4.tlgrm" Exec exec telegram-desktop
++ "&5.www" Exec exec firefox --new-instance --private-window -P default
++ "&6.www-tor" Exec exec firefox --new-instance --private-window -P tor
++ "&7.nicotine" Exec exec nicotine
++ "&8.mail" Exec exec sylpheed
++ "&9.lxmusic" Exec exec lxmusic
++ "&0.pidgin" Exec exec pidgin
++ "&A.www-i2p" Exec exec firefox --new-instance --private-window -P i2p
++ "&B.fbreader" Exec exec FBReader
++ "&C.office" Exec exec libreoffice
+
+*FvwmButtonsIN: Colorset 0
+*FvwmButtonsIN: Rows 11
+*FvwmButtonsIN: Columns 1 
+*FvwmButtonsIN: ButtonGeometry 64x64-0-0
+*FvwmButtonsIN: Font "xft:fixed:lang=ru:pixelsize=15"
+*FvwmButtonsIN: (Swallow wmupmon `Exec exec wmupmon -bw`)
+*FvwmButtonsIN: (Swallow wmcpuload `Exec exec wmcpuload -w`)
+*FvwmButtonsIN: (Swallow wmnd `Exec exec wmnd`)
+*FvwmButtonsIN: (Swallow wmtop `Exec exec wmtop`)
+*FvwmButtonsIN: (Padding 12, Swallow xbatt `Exec exec xbatt`)
+*FvwmButtonsIN: (Swallow wmSolar `Exec exec wmSolar`)
+*FvwmButtonsIN: (Swallow wmsmixer `Exec exec wmsmixer -s -l "#a0a0a0"`)
+*FvwmButtonsIN: (Swallow wmweather+ `Exec exec wmweather+ -s UUDD -m`)
+*FvwmButtonsIN: (Swallow wmSun `Exec exec wmSun -lat 55.7 -lon 37.6`)
+*FvwmButtonsIN: (Swallow wmmoonclock `Exec exec wmmoonclock -lat 55.7 -lon 37.6`)
+*FvwmButtonsIN: (Swallow wmtime `Exec exec wmtime -digital`)
+Module FvwmButtons FvwmButtonsIN
+
+Style FvwmPager* Borders
+*FvwmPager: Rows 1 
+*FvwmPager: Columns 1
+*FvwmPager: WindowColorsets 0 1
+*FvwmPager: Window3DBorders
+*FvwmPager: WindowBorderWidth 2
+*FvwmPager: UseSkipList
+*FvwmPager: Geometry 50x50-0+0
+*FvwmPager: Font none
+*FvwmPager: SmallFont none
+*FvwmPager: Fore "#808080"
+*FvwmPager: Back "#000000"
+Module FvwmPager *
+ 
+
+AddToFunc KbdDeic
++ "I" Next (Iconic) Iconify off
++ "I" Next (!Iconic, AcceptsFocus, CurrentPage) Focus NoWarp
++ "I" Current Raise
++ "I" Current WarpToWindow 50 50
+
+AddToFunc KbdNext
++ "I" Next (!Iconic, AcceptsFocus, CurrentPage) Focus NoWarp
++ "I" Current Raise
++ "I" Current WarpToWindow 50 50
+
+AddToFunc KbdPrev
++ "I" Prev (!Iconic, AcceptsFocus, CurrentPage) Focus NoWarp
++ "I" Current Raise
++ "I" Current WarpToWindow 50 50
+
+AddToFunc KbdMove
++ "I" Current Raise
++ "I" Current WarpToWindow 50 50
++ "I" Current Move w$0p w$1p
++ "I" CursorMove $0p $1p 
+
+AddToFunc KbdResize
++ "I" Current Raise
++ "I" Current WarpToWindow 50 50
++ "I" Current Resize w$0p w$1p
++ "I" Current WarpToWindow 50 50
+
+DefaultColorset 0
+DefaultFont "xft:fixed:lang=ru:pixelsize=15"

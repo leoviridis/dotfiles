@@ -1,0 +1,75 @@
+/*default color scheme */
+@define-color bg_color #000000;
+@define-color fg_color #a0a0a0;
+@define-color base_color #000000;
+@define-color text_color #a0a0a0;
+@define-color selected_bg_color #505050;
+@define-color selected_fg_color #a0a0a0;
+@define-color tooltip_bg_color #282828;
+@define-color tooltip_fg_color #a0a0a0;
+
+@define-color insensitive_bg_color #000000;
+@define-color insensitive_fg_color #787878;
+
+@define-color borders #505050;
+
+/* misc colors used by gtk+
+ *
+ * Gtk doesn't currently expand color variables for style properties. Thus,
+ * gtk-widgets.css uses literal color names, but includes a comment containing
+ * the name of the variable. Please remember to change values there as well
+ * when changing one of the variables below.
+ */
+@define-color info_fg_color #a0a0a0;
+@define-color info_bg_color #000000;
+@define-color warning_fg_color #a07800;
+@define-color warning_bg_color #000000;
+@define-color question_fg_color #0078a0;
+@define-color question_bg_color #000000;
+@define-color error_fg_color #a00050;
+@define-color error_bg_color #000000;
+@define-color link_color #0078a0;
+@define-color success_color #50a000;
+@define-color error_color #a00050;
+
+/* theme common colors */
+@define-color button_text_shadow #505050;
+@define-color button_bg_color #000000; /*shade (#cdcdcd, 1.08);*/
+@define-color notebook_button_bg_color #000000;
+@define-color button_insensitive_bg_color #000000;
+@define-color dark_bg_color #000000;
+@define-color dark_fg_color #a0a0a0;
+
+@define-color backdrop_fg_color @fg_color;
+@define-color backdrop_text_color @text_color;
+@define-color theme_unfocused_text_color @backdrop_text_color;
+@define-color backdrop_dark_fg_color @dark_fg_color;
+@define-color backdrop_dark_bg_color @dark_bg_color;
+@define-color backdrop_selected_bg_color @selected_bg_color;
+@define-color backdrop_selected_fg_color @fg_color;
+@define-color backdrop_filling_bg #000000;
+
+@define-color focus_color #000000;
+@define-color focus_bg_color #787878;
+
+@define-color scale_highlight_bg #505050;
+
+@define-color shadow_color #505050;
+
+@define-color osd_fg_color #a0a0a0;
+@define-color osd_bg_color #000000;
+@define-color osd_border_color #505050;
+
+@define-color scrollbar_track_color mix(@base_color, black, 0.1); /* #e6e6e6 */
+
+@define-color progressbar_fill_a shade(@selected_bg_color, 1.07);
+@define-color progressbar_fill_b shade(mix(@selected_bg_color, @selected_bg_color, 0.10), 0.91);
+@define-color button_border_active shade(@selected_bg_color, 0.95);
+@define-color progressbar_backdrop_fill_a shade(@selected_bg_color, 1.07);
+@define-color progressbar_backdrop_fill_b shade(mix(@selected_bg_color, grey, 0.10), 0.91);
+@define-color button_border_backdrop_active shade(@selected_bg_color, 0.95);
+
+@import url("gtk-widgets-borders.css");
+@import url("gtk-widgets-assets.css");
+@import url("gtk-widgets.css");
+@import url("public-colors.css");

@@ -1,0 +1,33 @@
+*background: #000000
+*foreground: #a0a0a0
+*utf8: always
+*faceName:	fixed:pixelsize=15:lang=ru
+*boldMode: false
+*scrollBar: false
+*highlightColor: #505050
+*iconBorderColor: #787878
+*activeIcon: false
+
+*color0:	#000000
+*color8:	#787878
+
+*color1:	#a00050
+*color9:	#ff0080
+
+*color2:	#50a000
+*color10:	#80ff00
+
+*color3:	#a07800
+*color11:	#ffc000
+
+*color4:	#0050a0
+*color12:	#0080ff
+
+*color5:	#7800a0
+*color13:	#c000ff
+
+*color6:	#0078a0
+*color14:	#00c0ff
+
+*color7:	#a0a0a0
+*color15:	#ffffff

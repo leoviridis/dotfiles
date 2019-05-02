@@ -1,0 +1,31 @@
+style "default" {
+	bg[NORMAL] = "#000000"
+	base[NORMAL] = "#000000"
+	bg[INSENSITIVE] = "#000000"
+	base[INSENSITIVE] = "#000000"
+	bg[ACTIVE] = "#505050"
+	base[ACTIVE] = "#505050"
+	bg[PRELIGHT] = "#505050"
+	base[PRELIGHT] = "#505050"
+	bg[SELECTED] = "#787878"
+	base[SELECTED] = "#787878"
+	
+	fg[NORMAL] = "#a0a0a0"
+	text[NORMAL] = "#a0a0a0"
+	fg[INSENSITIVE] = "#787878"
+	text[INSENSITIVE] = "#787878"
+	fg[ACTIVE] = "#a0a0a0"
+	text[ACTIVE] = "#a0a0a0"
+	fg[PRELIGHT] = "#a0a0a0"
+	text[PRELIGHT] = "#a0a0a0"
+	fg[SELECTED] = "#000000"
+	text[SELECTED] = "#000000"
+	
+	engine "industrial" {}
+	
+	font_name = "arial 11"
+}
+
+widget "*" style "default"
+
+gtk-font-name = "arial 11"
