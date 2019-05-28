@@ -107,7 +107,7 @@ AddToMenu RootMenu
 *FvwmButtonsIN: Columns 1 
 *FvwmButtonsIN: ButtonGeometry 64x64-0-0
 *FvwmButtonsIN: Font "xft:fixed:lang=ru:pixelsize=15"
-*FvwmButtonsIN: (Frame 2, Padding 2, Container(Rows 1, Columns 1))
+*FvwmButtonsIN: (Frame 2, Padding 1, Container(Rows 1, Columns 1))
 *FvwmButtonsIN: (Frame -2, Swallow FvwmPager `Module FvwmPager *`)
 *FvwmButtonsIN: (End)
 *FvwmButtonsIN: (Swallow wmupmon `Exec exec wmupmon -bw`)
