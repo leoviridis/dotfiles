@@ -103,10 +103,11 @@ AddToMenu RootMenu
 + "&C.office" Exec exec libreoffice
 
 *FvwmButtonsIN: Colorset 0
-*FvwmButtonsIN: Rows 11
+*FvwmButtonsIN: Rows 12
 *FvwmButtonsIN: Columns 1 
 *FvwmButtonsIN: ButtonGeometry 64x64-0-0
 *FvwmButtonsIN: Font "xft:fixed:lang=ru:pixelsize=15"
+*FvwmButtonsIN: (Swallow FvwmPager `Module FvwmPager *`)
 *FvwmButtonsIN: (Swallow wmupmon `Exec exec wmupmon -bw`)
 *FvwmButtonsIN: (Swallow wmcpuload `Exec exec wmcpuload -w`)
 *FvwmButtonsIN: (Swallow wmnd `Exec exec wmnd`)
@@ -120,20 +121,16 @@ AddToMenu RootMenu
 *FvwmButtonsIN: (Swallow wmtime `Exec exec wmtime -digital`)
 Module FvwmButtons FvwmButtonsIN
 
-Style FvwmPager* Borders
 *FvwmPager: Rows 1 
 *FvwmPager: Columns 1
 *FvwmPager: WindowColorsets 0 1
 *FvwmPager: Window3DBorders
 *FvwmPager: WindowBorderWidth 2
 *FvwmPager: UseSkipList
-*FvwmPager: Geometry 50x50-0+0
 *FvwmPager: Font none
 *FvwmPager: SmallFont none
 *FvwmPager: Fore "#808080"
 *FvwmPager: Back "#000000"
-Module FvwmPager *
- 
 
 AddToFunc KbdDeic
 + "I" Next (Iconic) Iconify off
